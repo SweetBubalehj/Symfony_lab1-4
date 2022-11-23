@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}My first Application{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+
+    <div>
+        <h1>Hello, this is my first application on symfony</h1>
+        <h5>© Egor</h5>
+    </div>
+
+    <div>
+        <p>You want to check your lucky number?</p>
+        <a href="{{ path('app_lucky', { id: lucky_number }) }}">Go to lucky number</a>
+    </div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Lucky number{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    .lucky__number { color: #B0413E }
+</style>
+
+<div class="example-wrapper">
+    <div class="lucky">
+        <div class="lucky__section">
+            <h1>{{ greeting }} we found your lucky number!</h1>
+            <p>Your lucky number is <span class="lucky__number">{{ lucky_number }}</span>😃</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
